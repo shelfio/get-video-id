@@ -1,11 +1,10 @@
 {
-  "name": "@shelf/xxxxxx",
+  "name": "@shelf/get-video-id",
   "version": "0.0.0",
-  "description": "xxxxxx",
+  "description": "Wrapper around https://github.com/radiovisual/get-video-id to return youtube start from query params",
   "license": "MIT",
   "author": {
-    "name": "Vlad Holubiev",
-    "email": "vlad@shelf.io",
+    "name": "Yaroslav Chapelskyi",
     "url": "https://shelf.io"
   },
   "main": "lib",
@@ -40,7 +39,10 @@
     "extends": "@shelf/babel-config/backend"
   },
   "prettier": "@shelf/prettier-config",
-  "dependencies": {},
+  "dependencies": {
+    "get-video-id": "3.5.3",
+    "querystring": "0.2.0"
+  },
   "devDependencies": {
     "@babel/cli": "7.19.3",
     "@babel/core": "7.19.6",
@@ -49,6 +51,7 @@
     "@shelf/prettier-config": "1.0.0",
     "@shelf/tsconfig": "0.0.9",
     "@types/jest": "29.2.0",
+    "@types/lodash": "4.14.186",
     "@types/node": "16",
     "eslint": "8.26.0",
     "husky": "8.0.1",
@@ -56,6 +59,9 @@
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
     "typescript": "4.8.4"
+  },
+  "peerDependencies": {
+    "lodash": "4.x.x"
   },
   "engines": {
     "node": ">=16"
