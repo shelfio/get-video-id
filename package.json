@@ -41,7 +41,7 @@
   "prettier": "@shelf/prettier-config",
   "dependencies": {
     "get-video-id": "3.5.3",
-    "querystring": "0.2.0"
+    "querystring": "0.2.1"
   },
   "devDependencies": {
     "@babel/cli": "7.19.3",
