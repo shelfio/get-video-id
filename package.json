@@ -40,7 +40,7 @@
   },
   "prettier": "@shelf/prettier-config",
   "dependencies": {
-    "get-video-id": "3.5.3",
+    "get-video-id": "3.6.5",
     "querystring": "0.2.1"
   },
   "devDependencies": {
