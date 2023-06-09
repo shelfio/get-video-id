@@ -44,7 +44,7 @@
     "querystring": "0.2.1"
   },
   "devDependencies": {
-    "@babel/cli": "7.19.3",
+    "@babel/cli": "7.22.5",
     "@babel/core": "7.22.5",
     "@shelf/babel-config": "1.2.0",
     "@shelf/eslint-config": "2.22.3",
