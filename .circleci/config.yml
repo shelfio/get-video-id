@@ -30,3 +30,4 @@ jobs:
       - run: yarn test
       - run: yarn type-check
       - run: yarn lint:ci
+      - run: yarn size
