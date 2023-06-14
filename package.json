@@ -1,6 +1,6 @@
 {
   "name": "@shelf/get-video-id",
-  "version": "0.5.86",
+  "version": "1.0.0",
   "description": "Wrapper around https://github.com/radiovisual/get-video-id to return youtube start from query params",
   "license": "MIT",
   "author": {
