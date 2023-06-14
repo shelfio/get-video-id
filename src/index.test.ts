@@ -24,4 +24,12 @@ describe('getVideoId', () => {
     expect(meta.id).toEqual('259411563');
     expect(meta.embedURL).toEqual('https://player.vimeo.com/video/259411563');
   });
+
+  it('should meta for other video vendors', function () {
+    const meta = getVideoId('https://www.tiktok.com/@kwinkwilii/video/7143586914442939674');
+
+    expect(meta.service).toEqual('tiktok');
+    expect(meta.id).toEqual('7143586914442939674');
+    expect(meta.embedURL).toBeUndefined();
+  });
 });
