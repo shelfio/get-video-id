@@ -43,6 +43,12 @@
     "get-video-id": "3.6.5",
     "querystring": "0.2.1"
   },
+  "size-limit": [
+    {
+      "path": "lib/index.js",
+      "limit": "3 KB"
+    }
+  ],
   "devDependencies": {
     "@babel/cli": "7.19.3",
     "@babel/core": "7.22.5",
