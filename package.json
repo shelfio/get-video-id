@@ -13,14 +13,12 @@
     "lib"
   ],
   "scripts": {
-    "build": "rm -rf lib/ && yarn build:types && yarn build:code",
-    "build:code": "babel src --out-dir lib --ignore '**/*.test.ts' --extensions '.ts' && find ./lib -name '*.test.d.ts' -delete",
-    "build:types": "tsc --emitDeclarationOnly --declaration --isolatedModules false --declarationDir lib",
+    "build": "rm -rf lib/ && tsc",
     "coverage": "yarn test --coverage",
     "lint": "yarn lint:ci --fix",
     "lint:ci": "eslint . --ext .js,.ts,.json",
-    "size": "size-limit",
     "prepack": "yarn build",
+    "size": "size-limit",
     "test": "TZ=UTC jest src",
     "type-check": "tsc --noEmit"
   },
@@ -35,19 +33,7 @@
       ".husky/validate-circleci-config.sh"
     ]
   },
-  "babel": {
-    "extends": "@shelf/babel-config/backend"
-  },
   "prettier": "@shelf/prettier-config",
-  "dependencies": {
-    "get-video-id": "3.6.5"
-  },
-  "size-limit": [
-    {
-      "path": "lib/index.js",
-      "limit": "3 KB"
-    }
-  ],
   "jest": {
     "collectCoverage": true,
     "coverageThreshold": {
@@ -59,10 +45,10 @@
       }
     }
   },
+  "dependencies": {
+    "get-video-id": "3.6.5"
+  },
   "devDependencies": {
-    "@babel/cli": "7.19.3",
-    "@babel/core": "7.22.5",
-    "@shelf/babel-config": "1.2.0",
     "@shelf/eslint-config": "2.22.3",
     "@shelf/prettier-config": "1.0.0",
     "@shelf/tsconfig": "0.0.11",
@@ -81,5 +67,11 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "size-limit": [
+    {
+      "path": "lib/index.js",
+      "limit": "3 KB"
+    }
+  ]
 }
