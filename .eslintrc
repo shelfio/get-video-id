@@ -1,9 +1,4 @@
 {
   "root": true,
-  "extends": [
-    "@shelf/eslint-config/typescript"
-  ],
-  "rules": {
-    "complexity": 0
-  }
+  "extends": ["@shelf/eslint-config/typescript"]
 }

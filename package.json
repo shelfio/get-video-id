@@ -7,7 +7,6 @@
     "name": "Yaroslav Chapelskyi",
     "url": "https://shelf.io"
   },
-  "sideEffect": false,
   "type": "module",
   "exports": "./lib/index.js",
   "types": "lib/index.d.ts",
@@ -60,6 +59,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "sideEffect": false,
   "size-limit": [
     {
       "path": "lib/index.js",
