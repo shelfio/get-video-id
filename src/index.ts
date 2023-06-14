@@ -1,20 +1,6 @@
 import getVideoId from 'get-video-id';
-import {parse, stringify} from 'querystring';
-import {isEmpty} from 'lodash';
 
-export type VideoService =
-  | 'youtube'
-  | 'vimeo'
-  | 'vine'
-  | 'videopress'
-  | 'microsoftstream'
-  | 'tiktok'
-  | 'dailymotion'
-  | null;
-
-export type VideoMeta = {
-  id: string | null;
-  service: VideoService;
+export type VideoMeta = ReturnType<typeof getVideoId> & {
   embedURL?: string;
 };
 
@@ -22,23 +8,16 @@ export default function (url: string): VideoMeta {
   const meta = getVideoId(url);
 
   if (meta.service === 'youtube') {
-    const qs: any = {};
+    const uri = new URL(url);
+    const youtubeURL = new URL(`https://www.youtube.com/embed/${meta.id}`);
 
-    if (url.indexOf('?') > -1) {
-      const queryParams = url.slice(url.indexOf('?') + 1);
-
-      const {t} = parse(queryParams);
-
-      if (t) {
-        qs.start = t;
-      }
+    if (uri.searchParams.has('t')) {
+      youtubeURL.searchParams.set('start', uri.searchParams.get('t')!);
     }
-
-    const querystring = !isEmpty(qs) ? `?${stringify(qs)}` : '';
 
     return {
       ...meta,
-      embedURL: `https://www.youtube.com/embed/${meta.id}${querystring}`,
+      embedURL: youtubeURL.toString(),
     };
   }
 
