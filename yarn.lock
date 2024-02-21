@@ -2864,10 +2864,10 @@ get-tsconfig@^4.5.0:
   dependencies:
     resolve-pkg-maps "^1.0.0"
 
-get-video-id@3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/get-video-id/-/get-video-id-3.6.5.tgz#a7bfa1e8602557f2fcbed164d7005fdaa352d572"
-  integrity sha512-9RPHSQANIeGW5rU3CjWdm1zi+wUHbBWX+m4m+dqQAavrZ9p1P1J7AbxGvVEEHRyGfGrmMf5PqiRWYMyfqM+QYA==
+get-video-id@3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/get-video-id/-/get-video-id-3.7.0.tgz#a8ad5636e9dc256351332d8e5f710bd5da8362b8"
+  integrity sha512-hU5pnODTo87slfs9MUFO3vpJr23AESJHmF20T3ivqQJZ/Wz0W5TxjSrGoyB6X538Shyi6tCCpQSeBoV88F9NYA==
 
 git-hooks-list@1.0.3:
   version "1.0.3"
