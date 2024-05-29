@@ -45,7 +45,7 @@
     "lint-staged": "15.2.7",
     "prettier": "3.3.2",
     "size-limit": "11.1.4",
-    "ts-jest": "29.1.2",
+    "ts-jest": "29.1.4",
     "typescript": "5.4.5"
   },
   "engines": {
