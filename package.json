@@ -22,7 +22,8 @@
     "prepack": "yarn build",
     "size": "size-limit",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "prepare": "husky"
   },
   "lint-staged": {
     "*.{html,md,yml}": "prettier --write",
