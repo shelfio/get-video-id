@@ -35,7 +35,7 @@
     "get-video-id": "4.1.7"
   },
   "devDependencies": {
-    "@shelf/eslint-config": "4.2.1",
+    "@shelf/eslint-config": "4.4.0",
     "@shelf/prettier-config": "1.0.0",
     "@shelf/tsconfig": "0.1.0",
     "@size-limit/preset-small-lib": "11.1.6",
