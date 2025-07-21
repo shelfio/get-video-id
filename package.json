@@ -35,7 +35,7 @@
     "get-video-id": "4.1.7"
   },
   "resolutions": {
-    "cross-spawn": "7.0.5",
+    "cross-spawn": "7.0.6",
     "esbuild": "0.25.0"
   },
   "devDependencies": {
